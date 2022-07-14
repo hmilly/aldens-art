@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background: rgb(0, 7, 70);
+	background: linear-gradient(
+		71deg,
+		rgba(0, 7, 70, 1) 11%,
+		rgba(0, 34, 96, 1) 42%,
+		rgba(2, 28, 105, 1) 54%,
+		rgba(1, 10, 107, 1) 65%,
+		rgba(0, 0, 64, 1) 93%
+	);
+	display: grid;
+	grid-template-columns: minmax(280px, 1fr);
+	grid-template-rows: 50px 1fr 50px;
+	gap: 10px;
+	justify-items: center;
+	align-content: space-between;
+}
+
+h3 {
+	color: yellow;
+	align-self: center;
+	text-align: center;
+	border-radius: 5px;
+	text-shadow: -2px 2px 10px #3ac3d5;
+}
+
+p,
+h1,
+h2,
+h4,
+li,
+a,
+button,
+label {
+	text-shadow: 3px 2px #2b2d88e8;
+	color: #cdd1ff;
+}
+
+h1 {
+	font-size: 30px;
+}
+h2,
+h3,
+h4 {
+	font-size: 25px;
+}
+p,
+li,
+button,
+label,
+form,
+a {
+	font-size: 20px;
+}
+input,
+textarea {
+	font-size: 15px;
+}
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 22px;
+	}
+	h2,
+	h3,
+	h4 {
+		font-size: 18px;
+	}
+	p,
+	li,
+	button,
+	label,
+	form,
+	a {
+		font-size: 16px;
+	}
+	input,
+	textarea {
+		font-size: 13px;
+	}
+}
